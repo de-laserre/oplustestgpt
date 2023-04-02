@@ -630,9 +630,9 @@ export function Home() {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+          <div className={styles["sidebar-title"]}>ChatGPT For Oplus</div>
           <div className={styles["sidebar-sub-title"]}>
-            Build your own AI assistant.
+            仅供中子研究所内部交流学习使用，请勿外发链接
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
@@ -669,11 +669,6 @@ export function Home() {
                   setShowSideBar(false);
                 }}
               />
-            </div>
-            <div className={styles["sidebar-action"]}>
-              <a href={REPO_URL} target="_blank">
-                <IconButton icon={<GithubIcon />} />
-              </a>
             </div>
           </div>
           <div>
