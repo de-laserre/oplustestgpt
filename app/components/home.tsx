@@ -632,7 +632,7 @@ export function Home() {
         <div className={styles["sidebar-header"]}>
           <div className={styles["sidebar-title"]}>ChatGPT For Oplus</div>
           <div className={styles["sidebar-sub-title"]}>
-            仅供中子研究所内部交流学习使用，请勿外发链接
+            中子交流学习使用，勿外发链接
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
