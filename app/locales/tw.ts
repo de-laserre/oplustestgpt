@@ -59,6 +59,7 @@ const tw: LocaleType = {
         en: "English",
         tw: "繁體中文",
         es: "Español",
+        it: "Italiano",
       },
     },
     Avatar: "大頭貼",
@@ -72,11 +73,12 @@ const tw: LocaleType = {
       CheckUpdate: "檢查更新",
       IsChecking: "正在檢查更新...",
       FoundUpdate: (x: string) => `發現新版本：${x}`,
-      GoToUpdate: "提醒更新",
+      GoToUpdate: "前往更新",
     },
     SendKey: "發送鍵",
     Theme: "主題",
     TightBorder: "緊湊邊框",
+    SendPreviewBubble: "發送預覽氣泡",
     Prompt: {
       Disable: {
         Title: "停用提示詞自動補全",
@@ -102,11 +104,12 @@ const tw: LocaleType = {
     },
     Usage: {
       Title: "帳戶餘額",
-      SubTitle(granted: any, used: any) {
-        return `總共 $${granted}，已使用 $${used}`;
+      SubTitle(used: any) {
+        return `本月已使用 $${used}`;
       },
       IsChecking: "正在檢查…",
       Check: "重新檢查",
+      NoAccess: "輸入API Key查看餘額",
     },
     AccessCode: {
       Title: "訪問碼",
@@ -136,13 +139,18 @@ const tw: LocaleType = {
         "這是 AI 與用戶的歷史聊天總結，作為前情提要：" + content,
       Topic: "直接返回這句話的簡要主題，無須解釋，若無主題，請直接返回「閒聊」",
       Summarize:
-        "簡要總結一下你和用戶的對話，作為後續的上下文提示 prompt，且字數控制在 50 字以內",
+        "簡要總結一下你和用戶的對話，作為後續的上下文提示 prompt，且字數控制在 200 字以內",
     },
     ConfirmClearAll: "確認清除所有對話、設定數據？",
   },
   Copy: {
     Success: "已複製到剪貼簿中",
     Failed: "複製失敗，請賦予剪貼簿權限",
+  },
+  Context: {
+    Toast: (x: any) => `已設置 ${x} 條前置上下文`,
+    Edit: "前置上下文和歷史記憶",
+    Add: "新增壹條",
   },
 };
 
