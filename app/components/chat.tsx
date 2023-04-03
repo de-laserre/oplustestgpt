@@ -420,7 +420,7 @@ export function Chat(props: {
     context.length === 0 &&
     session.messages.at(0)?.content !== BOT_HELLO.content
   ) {
-    context.push(BOT_HELLO);
+    // context.push(BOT_HELLO);
   }
 
   // preview messages
