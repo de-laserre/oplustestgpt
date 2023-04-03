@@ -153,6 +153,7 @@ export interface ChatSession {
   id: number;
   topic: string;
   memoryPrompt: string;
+  messages: Message[];
   stat: ChatStat;
   lastUpdate: string;
   lastSummarizeIndex: number;
@@ -167,6 +168,13 @@ function createEmptySession(): ChatSession {
     id: Date.now(),
     topic: DEFAULT_TOPIC,
     memoryPrompt: "",
+    messages: [
+      {
+        role: "",
+        content: Locale.Store.BotHello,
+        date: createDate,
+      },
+    ],
     stat: {
       tokenCount: 0,
       wordCount: 0,
