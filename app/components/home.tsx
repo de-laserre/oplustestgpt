@@ -103,9 +103,9 @@ function _Home() {
         className={styles.sidebar + ` ${showSideBar && styles["sidebar-show"]}`}
       >
         <div className={styles["sidebar-header"]}>
-          <div className={styles["sidebar-title"]}>ChatGPT Next</div>
+          <div className={styles["sidebar-title"]}>OplusChatGPT</div>
           <div className={styles["sidebar-sub-title"]}>
-            中子内部测试使用勿外发
+            中子内部测试,会产生费用,勿外发
           </div>
           <div className={styles["sidebar-logo"]}>
             <ChatGptIcon />
