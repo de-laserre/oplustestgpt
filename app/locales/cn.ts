@@ -128,8 +128,8 @@ const cn = {
     },
   },
   Store: {
-    DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    DefaultTopic: "",
+    BotHello: "",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) =>

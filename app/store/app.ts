@@ -170,7 +170,7 @@ function createEmptySession(): ChatSession {
     memoryPrompt: "",
     messages: [
       {
-        role: "assistant",
+        role: "",
         content: Locale.Store.BotHello,
         date: createDate,
       },
